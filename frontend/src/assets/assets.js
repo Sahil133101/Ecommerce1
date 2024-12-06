@@ -1,5 +1,5 @@
 import p_img1 from '../assets/Product/7-4-v-1100-mah-rechargeable-lithium-ion-battery-500x500.jpg'
-import p_img2 from '../assets/Product/7-4-v-2200-mah-lithium-battery-500x500.jpg'
+// import p_img2 from '../assets/Product/7-4-v-2200-mah-lithium-battery-500x500.jpg'
 import p_img3 from '../assets/Product/7-4-v-2600-mah-lithium-ion-battery-500x500.jpg'
 import p_img4 from '../assets/Product/11-1-v-2200-mah-lithium-ion-battery-500x500.jpg'
 import p_img5 from '../assets/Product/1100-mah-lithium-ion-battery-500x500 (1).jpg'
@@ -67,18 +67,18 @@ export const products = [
         date: 1716634345448,
         bestseller: true
     },
-    {
-        _id: "aaaab",
-        name: "7-4-v-2200-mah-lithium-battery",
-        description: "7-4-v-2200-mah-lithium-battery",
-        price: 200,
-        image: [p_img2],
-        category: "Lithium",
-        subCategory: "Lithium-ion",
+    // {
+    //     _id: "aaaab",
+    //     name: "7-4-v-2200-mah-lithium-battery",
+    //     description: "7-4-v-2200-mah-lithium-battery",
+    //     price: 200,
+    //     image: [p_img2],
+    //     category: "Lithium",
+    //     subCategory: "Lithium-ion",
     
-        date: 1716621345448,
-        bestseller: true
-    },
+    //     date: 1716621345448,
+    //     bestseller: true
+    // },
     {
         _id: "aaaac",
         name: "7-4-v-2600-mah-lithium-ion-battery",

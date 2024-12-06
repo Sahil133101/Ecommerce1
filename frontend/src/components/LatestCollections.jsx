@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
-import { ShopContext } from '../context/Shopcontext'
+import { Shopcontext } from '../context/Shopcontext'
 
 const LatestCollections = () => {
-    const {products} = useContext(ShopContext);
+    const {products} = useContext(Shopcontext);
     console.log('products');
   return (
     <div>LatestCollections</div>

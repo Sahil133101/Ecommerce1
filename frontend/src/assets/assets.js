@@ -15,7 +15,7 @@ import p_img10 from '../assets/Product/4400-mah-lithium-ion-battery-500x500.jpg'
 
 
 import logo from './logo-color.png'
-import hero_img from '../assets/Banner/AdobeStock_459574340_Preview.jpeg'
+import hero_img from '../assets/Banner/images.jpeg'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'

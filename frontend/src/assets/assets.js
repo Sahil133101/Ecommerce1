@@ -117,8 +117,8 @@ export const products = [
     },
     {
         _id: "aaaaf",
-        name: "",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        name: "1100-mah-lithium-ion-battery",
+        description: "1100-mah-lithium-ion-battery",
         price: 140,
         image: [p_img6],
         category: "Kids",

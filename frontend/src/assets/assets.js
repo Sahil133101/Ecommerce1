@@ -8,9 +8,11 @@ import p_img7 from '../assets/Product/2200-mah-rechargeable-lithium-ion-battery-
 import p_img8 from '../assets/Product/2200-mah-rechargeable-lithium-ion-battery-500x500 (1).jpg'
 import p_img9 from '../assets/Product/2600-mah-lithium-ion-battery-500x500 (1).jpg'
 import p_img10 from '../assets/Product/4400-mah-lithium-ion-battery-500x500.jpg'
-// import B_img1 from '../assets/Banner/AdobeStock_459574340_Preview.jpeg'
-// import B_img2 from '../assets/Banner/AdobeStock_526620639_Preview.jpeg'
-// import B_img3 from '../assets/Banner/AdobeStock_905269181_Preview.jpeg'
+import P_img11 from '../assets/Product/as-12v-lithium-ion-battery-500x500.jpg'
+import p_img12 from '../assets/Product/nickelcadmium-batteries-500x500.jpg'
+import p_img13 from '../assets/Product/1300-mah-nimh-battery-500x500.jpg'
+import p_img14 from '../assets/Product/5-cylindrical-liion-batteries-type-600nw-2131918641.jpg'
+import p_img15 from '../assets/Product/5-cylindrical-liion-batteries-type-600nw-2131918641.jpg'
 
 
 
@@ -65,20 +67,9 @@ export const products = [
         subCategory: "Lithium-ion",
         
         date: 1716634345448,
-        bestseller: true
+  
     },
-    // {
-    //     _id: "aaaab",
-    //     name: "7-4-v-2200-mah-lithium-battery",
-    //     description: "7-4-v-2200-mah-lithium-battery",
-    //     price: 200,
-    //     image: [p_img2],
-    //     category: "Lithium",
-    //     subCategory: "Lithium-ion",
-    
-    //     date: 1716621345448,
-    //     bestseller: true
-    // },
+   
     {
         _id: "aaaac",
         name: "7-4-v-2600-mah-lithium-ion-battery",
@@ -89,7 +80,7 @@ export const products = [
         subCategory: "Lithium-ion",
       
         date: 1716234545448,
-        bestseller: true
+ 
     },
     {
         _id: "aaaad",
@@ -101,7 +92,7 @@ export const products = [
         subCategory: "Lithium-ion",
         
         date: 1716621345448,
-        bestseller: true
+      
     },
     {
         _id: "aaaae",
@@ -113,7 +104,7 @@ export const products = [
         subCategory: "Lithium-ion",
      
         date: 1716622345448,
-        bestseller: true
+   
     },
     {
         _id: "aaaaf",
@@ -121,11 +112,11 @@ export const products = [
         description: "1100-mah-lithium-ion-battery",
         price: 140,
         image: [p_img6],
-        category: "Kids",
-        subCategory: "Topwear",
-        sizes: ["S", "L", "XL"],
+        category: "Lithium",
+        subCategory: "Lithium-ion",
+      
         date: 1716623423448,
-        bestseller: true
+   
     },
     {
         _id: "aaaag",
@@ -136,7 +127,7 @@ export const products = [
         category: "Lithium",
         subCategory: "Lithium-ion",
         date: 1716621542448,
-        bestseller: false
+      
     },
     {
         _id: "aaaah",
@@ -147,7 +138,7 @@ export const products = [
         category: "Lithium",
         subCategory: "Lithium-ion",
         date: 1716622345448,
-        bestseller: false
+     
     },
     {
         _id: "aaaai",
@@ -158,7 +149,7 @@ export const products = [
         category: "Lithium",
         subCategory: "Lithium-ion",
         date: 1716621235448,
-        bestseller: false
+    
     },
     {
         _id: "aaaaj",
@@ -169,6 +160,61 @@ export const products = [
         category: "Lithium",
         subCategory: "Lithium-ion",
         date: 1716622235448,
-        bestseller: false
+        
     },
+      {
+        _id: "aaaak",
+        name: "12v-lithium-ion-battery",
+        description: "Lithium-Ion Battery",
+        price: 190,
+        image: [P_img11],
+        category: "Others",
+       
+        date: 1716622235448,
+        
+    },
+      {
+        _id: "aaaal",
+        name: "Nicek-Cadmium-battery",
+        description: "Nicek-Cadmium-battery",
+        price: 110,
+        image: [p_img12],
+        category: "Others",
+        subCategory: "Lithium-ion",
+        date: 1716622235448,
+        
+    },
+      {
+        _id: "aaaam",
+        name: "1300-mah-nimh",
+        description: "1300-mah-nimh",
+        price: 110,
+        image: [p_img13],
+        category: "Ni-mh",
+        subCategory: "Lithium-ion",
+        date: 1716622235448,
+        
+    },
+      {
+        _id: "aaaan",
+        name: "5-cylindrical Lithium Battery",
+        description: "5-cylindrical Lithium Battery",
+        price: 110,
+        image: [p_img14],
+        category: "Cylindrical-Lithium",
+        subCategory: "Lithium-ion",
+        date: 1716622235448,
+        
+    },
+    {
+        _id: "aaaa0",
+        name: "5-cylindrical Lithium Battery",
+        description: "5-cylindrical Lithium Battery",
+        price: 110,
+        image: [p_img15 ],
+        category: "Others",
+        subCategory: "Lithium-ion",
+        date: 1716622235448,
+        
+    }
 ]

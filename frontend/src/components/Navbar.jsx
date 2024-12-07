@@ -63,10 +63,10 @@ const Navbar = () => {
         <img className='h-4 rotate-180 ' src={assets.dropdown_icon} />
 <p className='cursor-pointer'>Back</p>
     </div>
-    <NavLink onClick={()=> setvisible(false)} className='py-2 text-center pl-6 border'to="/">Home </NavLink>
-    <NavLink onClick={()=> setvisible(false)} className='py-2 text-center pl-6 border'to="/collection">Collection </NavLink> 
-    <NavLink onClick={()=> setvisible(false)}className='py-2 text-center pl-6 border' to="/About">About </NavLink>
-    <NavLink  onClick={()=> setvisible(false)}className='py-2 text-center pl-6 border'to="/contact">Contact</NavLink>    
+    <NavLink onClick={()=> setvisible(false)} className='py-2 text-center pl-6 border hover:bg-black hover:text-white transition-colors'to="/">Home </NavLink>
+    <NavLink onClick={()=> setvisible(false)} className='py-2 text-center pl-6 border hover:bg-black hover:text-white transition-colors'to="/collection">Collection </NavLink> 
+    <NavLink onClick={()=> setvisible(false)}className='py-2 text-center pl-6 border hover:bg-black hover:text-white transition-colors' to="/About">About </NavLink>
+    <NavLink  onClick={()=> setvisible(false)}className='py-2 text-center pl-6 border hover:bg-black hover:text-white transition-colors'to="/contact">Contact</NavLink>    
 
 </div>
         </div>

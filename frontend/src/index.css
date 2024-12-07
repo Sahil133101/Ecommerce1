@@ -15,3 +15,10 @@ a.active hr {
   font-weight: 400;
   font-style: normal;
 }
+
+@media (max-widht: 40px) {
+  a.active {
+    background-color: black;
+    color: white;
+  }
+}

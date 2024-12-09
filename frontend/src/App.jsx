@@ -11,10 +11,12 @@ import Product from './pages/Product'
 import Cart from './pages/Cart'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import SearchBar from './components/SearchBar'
 const App = () => {
   return (
     <div className='px-2 sm:px-[4vw] md:px-[6vx], lg:px-[8vw]'>
       <Navbar />
+      <SearchBar />
       <Routes>
 <Route path='/'element={<Home />} />
 <Route path='/collection'element={<Collection />} />
@@ -23,7 +25,7 @@ const App = () => {
 <Route path='/logIn'element={<LogIn />} />
 <Route path='/orders'element={<Order />} />
 <Route path='/place-order'element={<PlaceOrder />} />
-<Route path='/product/product:Id'element={<Product />} />
+<Route path='/product/:productId'element={<Product />} />
 <Route path='/cart'element={<Cart />} />
       </Routes>
       <Footer />

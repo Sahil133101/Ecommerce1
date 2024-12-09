@@ -6,11 +6,11 @@ import { products } from "../assets/assets";
     const currecny = '₹';
     const delivery_fee = 50;
     const [search, setsearch] = useState('');
-    const[showseach , setshowseach] = useState(true);
+      const [showsearch, setshowsearch] = useState(location.pathname.includes('collection'));
 
     const value ={
 products , currecny , delivery_fee,
-search , setsearch, showseach, setshowseach
+search , setsearch, showsearch, setshowsearch
  
     }
 return (

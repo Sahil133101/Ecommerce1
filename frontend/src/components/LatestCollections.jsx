@@ -4,7 +4,7 @@ import Title from './Title';
 import ProductItem from './ProductItem';
 
 const LatestCollections = () => {
-    const {products} = useContext(Shopcontext);
+    const {products,  currecny} = useContext(Shopcontext);
 const [latesProducts,setlatestProducts] = useState([]);
 useEffect(()=>{
 setlatestProducts(products.slice(0,9));
@@ -20,7 +20,7 @@ setlatestProducts(products.slice(0,9));
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols5 gap-1 gap-y-4'> 
 {
     latesProducts.map((item,index)=>(
-        <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price}/>
+        <ProductItem key={index} id={item._id} image={item.image} name={item.name}  price={item.price}    />
 
     ))
 }

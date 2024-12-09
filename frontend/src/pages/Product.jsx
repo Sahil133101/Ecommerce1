@@ -3,6 +3,7 @@ import { Shopcontext } from '../context/Shopcontext';
 import { useContext, useEffect,useState} from 'react';
 import { useParams } from 'react-router-dom';
 import { assets } from '../assets/assets';
+import RelatedProducts from '../components/RelatedProducts';
 
 const Product = () => {
   
@@ -84,10 +85,15 @@ ADD TO CART
         </div>
         <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam temporibus dignissimos officiis nulla adipisci nam necessitatibus hic autem, nesciunt soluta, id architecto. Vero rerum minus consequuntur impedit non nostrum!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla accusantium explicabo, in totam magnam hic ipsa et consequatur est vitae cumque, numquam laborum dolore voluptatum voluptatibus, facilis ex tempore.</p>
 
         </div>
 
       </div>
+      {/* display related products */}
+      {/* <RelatedProducts category={productData.category}/> */}
+      <RelatedProducts category={productData.category} subCategory={productData.subCategory} />
+
 
     </div>
   ) : <div className='opacity-0'> 

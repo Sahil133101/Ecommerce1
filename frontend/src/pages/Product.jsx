@@ -72,6 +72,22 @@ ADD TO CART
 </div>
         </div>
       </div>
+      {/* Product review and description */}
+      <div className=' mt-20'>
+        <div className='flex'>
+          <b className='border px-5 py-3 text-sm'>
+            Description
+
+          </b>
+          <p className='border px-5 py-3 text-sm'>Reviews</p>
+
+        </div>
+        <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam temporibus dignissimos officiis nulla adipisci nam necessitatibus hic autem, nesciunt soluta, id architecto. Vero rerum minus consequuntur impedit non nostrum!</p>
+
+        </div>
+
+      </div>
 
     </div>
   ) : <div className='opacity-0'> 

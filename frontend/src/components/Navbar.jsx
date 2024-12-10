@@ -7,7 +7,7 @@ import Home from '../pages/Home';
 import { Shopcontext } from '../context/Shopcontext';
 const Navbar = () => {
     const [visible, setvisible] = useState(false);
-  const{setshowsearch} =useContext(Shopcontext);
+  const{setshowsearch, getCartCount} =useContext(Shopcontext);
     return (
     <div className='flex items-center justify-between py-5 font-medium'>
         <Link to="/"><img src={assets.logo} className='w-36' alt =""/> </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
 <Link to='/cart' className='relative'>
 <img src = {assets.cart_icon} className=' w-5 min-w-5'/>
-<p className='absolute right-[-6px] top-[-8px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'> 10</p>
+<p className='absolute right-[-6px] top-[-8px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>{getCartCount()}</p>
 
 </Link>
 <img onClick ={()=> setvisible(true)}src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' />

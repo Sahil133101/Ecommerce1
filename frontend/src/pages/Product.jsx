@@ -59,7 +59,7 @@ useEffect(()=>{
 <p className='mt-5 text-3xl font-medium'> {currecny}{productData.price}</p>
 <p className='mt-5 text-gray-500 md:w-4/5 '>{productData.description}</p>
 
-<button onClick={()=>addToCart(productData._id) } className='bg-black text-white mt-5  px-8 py-3 text-sm active:bg-gray-700'>
+<button onClick={()=>{addToCart(productData._id) } } className='bg-black text-white mt-5  px-8 py-3 text-sm active:bg-gray-700'>
 ADD TO CART
 </button>
 <hr className='text-sm text-gray-500 mt-5 flex flex-col gap-1'/>

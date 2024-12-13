@@ -77,10 +77,70 @@ const ShopcontextProvider = (props) => {
     const removeItem = (itemid, size) => {
         setcartItems((prevCartItems) => removeItemFromCart(prevCartItems, itemid, size));
     };
+// const getCartAmount = () => {
+//     let totalAmount = 0;
+//     console.log('Cart Items:', cartItems);  
+
+//     // Iterate through each item in the cart
+//     for (const items in cartItems) {
+//         // Find the product by matching the id, ensure we convert `items` to a number if it's a string
+//         let iteminfo = products.find((product) => product.id === product._id === items);
+
+//         // If the product is found and iteminfo is not undefined
+       
+//             // Iterate through sizes in cartItems[items]
+//             for (const item in cartItems[items]) {
+//                 try {
+//                     // Ensure the quantity is greater than 0 before adding the amount
+//                     if (cartItems[items][item] > 0) {
+//                         totalAmount += iteminfo.price * cartItems[items][item];
+//                     }
+//                 } catch (err) {
+//                     console.error('Error in getCartAmount:', err);
+//                 }
+//             }
+        
+    
+//     }
+
+//     return totalAmount;
+// };
+const getCartAmount = () => {
+    let totalAmount = 0;
+
+    // Log cart items and products for debugging
+
+    // Iterate through each item in the cart
+    for (const items in cartItems) {
+        // Find the product by ID
+        let iteminfo = products.find((product) => product._id === items);
+
+        // If the product is not found, log the error and skip the iteration
+        if (!iteminfo) {
+           
+            continue;  // Skip this item if it's not found
+        }
+
+        // Iterate through sizes in cartItems[items]
+        for (const size in cartItems[items]) {
+            try {
+                // Ensure the quantity is greater than 0 before adding the amount
+                if (cartItems[items][size] > 0) {
+                    totalAmount += iteminfo.price * cartItems[items][size];
+                }
+            } catch (err) {
+                console.error('Error in getCartAmount:', err);
+            }
+        }
+    }
+
+    return totalAmount;
+};
+
 
     // Logging cart items for debugging
     useEffect(() => {
-        console.log('Cart Items:', cartItems);
+      
     }, [cartItems]);
 
     const value = {
@@ -96,6 +156,7 @@ const ShopcontextProvider = (props) => {
         getCartCount,
         updateQuantity,
         removeItem, 
+        getCartAmount,  // New function to get cart amount
     };
 
     return (

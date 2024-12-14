@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { products } from "../assets/assets";
 
 export const Shopcontext = createContext();
@@ -9,7 +10,7 @@ const ShopcontextProvider = (props) => {
     const [search, setsearch] = useState('');
     const [showsearch, setshowsearch] = useState(location.pathname.includes('collection'));
     const [cartItems, setcartItems] = useState({});
-
+const navigate = useNavigate();
     // Function to add items to cart
     const addToCart = (itemid, size) => {
         setcartItems((prevCartItems) => {
@@ -156,7 +157,7 @@ const getCartAmount = () => {
         getCartCount,
         updateQuantity,
         removeItem, 
-        getCartAmount,  // New function to get cart amount
+        getCartAmount, navigate // New function to get cart amount
     };
 
     return (
